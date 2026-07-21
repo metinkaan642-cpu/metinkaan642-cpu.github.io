@@ -1,74 +1,52 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kaan Tools</title>
-<style>
-body{
-    font-family:Arial,sans-serif;
-    background:#f4f4f4;
-    text-align:center;
-    margin:0;
-}
-header{
-    background:#2563eb;
-    color:white;
-    padding:20px;
-}
-.container{
-    max-width:800px;
-    margin:auto;
-    padding:20px;
-}
-.card{
-    background:white;
-    padding:20px;
-    margin:15px 0;
-    border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,.1);
-}
-button{
-    background:#2563eb;
-    color:white;
-    border:none;
-    padding:10px 20px;
-    border-radius:6px;
-    cursor:pointer;
-}
-input{
-    padding:10px;
-    width:80%;
-    margin:10px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HesapX | Türkiye'nin Ücretsiz Online Araçları</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-<h1>Kaan Tools</h1>
-<p>Ücretsiz Online Hesaplama Araçları</p>
+    <h1>HesapX</h1>
+    <p>Türkiye'nin Ücretsiz Online Hesaplama Araçları</p>
 </header>
 
-<div class="container">
+<main>
+
+<section class="hero">
+<h2>İhtiyacın olan hesaplama aracını seç</h2>
+<p>YKS, KPSS, finans ve günlük hayat için onlarca ücretsiz araç.</p>
+</section>
+
+<section class="cards">
 
 <div class="card">
-<h2>Yaş Hesaplama</h2>
-<input type="number" id="year" placeholder="Doğum yılınız">
-<br>
-<button onclick="hesapla()">Hesapla</button>
-<h3 id="sonuc"></h3>
+<h3>🎓 Eğitim</h3>
+<p>YKS - TYT - AYT - KPSS</p>
 </div>
 
+<div class="card">
+<h3>💰 Finans</h3>
+<p>KDV, Faiz, Kredi</p>
 </div>
 
-<script>
-function hesapla(){
-let yil=document.getElementById("year").value;
-let yas=new Date().getFullYear()-yil;
-document.getElementById("sonuc").innerHTML="Yaşınız: "+yas;
-}
-</script>
+<div class="card">
+<h3>📏 Günlük</h3>
+<p>Yaş, BMI, Yüzde</p>
+</div>
+
+</section>
+
+</main>
+
+<footer>
+<p>© 2026 HesapX</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
