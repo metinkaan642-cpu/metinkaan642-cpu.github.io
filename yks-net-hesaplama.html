@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YKS Net Hesaplama | HesapX</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<header>
+<h1>YKS Net Hesaplama</h1>
+<p>Doğru ve yanlış sayılarını girerek netlerini hesapla.</p>
+</header>
+
+<main class="container">
+
+<div class="card">
+<h2>TYT Türkçe</h2>
+
+<input type="number" id="turkceDogru" placeholder="Doğru">
+<input type="number" id="turkceYanlis" placeholder="Yanlış">
+
+<button onclick="hesapla()">Neti Hesapla</button>
+
+<h2 id="sonuc"></h2>
+
+</div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
